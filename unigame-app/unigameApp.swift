@@ -16,7 +16,7 @@ struct unigameApp: App {
                 if let chosenGame {
                     gameView(chosenGame)
                 } else {
-                    ChoosingView()
+                    ChoosingView(app: self)
                 }
             }
         }
