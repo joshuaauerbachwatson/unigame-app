@@ -13,6 +13,7 @@ import AuerbachLook
 // Supported games
 //
 import tictactoe
+import UnigameTest
 
 enum Game: String, Identifiable, Hashable {
     case TicTacToe
@@ -44,6 +45,9 @@ let GameTable = games
 var tictactoeModel: UnigameModel<TicTacToeHandle> = {
      TicTacToeHandle.makeModel()
 }()
+var testModel: UnigameModel<TestGameHandle> = {
+     TestGameHandle.makeModel()
+}()
 // Add here as well
 
 //
@@ -55,7 +59,7 @@ func gameView(_ game: Game) -> some View {
     case .TicTacToe:
         ContentView<TicTacToeHandle>().environment(tictactoeModel)
     case .Test:
-        Logger.logFatalError("UnigameTest project not yet converted")
+        ContentView<TestGameHandle>().environment(testModel)
     case .AnyCards:
         Logger.logFatalError("AnyCards project not yet converted")
     // Add clauses as needed

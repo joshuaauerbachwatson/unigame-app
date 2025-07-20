@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		288D1DBF2E16FC8A007AE08C /* tictactoe in Frameworks */ = {isa = PBXBuildFile; productRef = 288D1DBE2E16FC8A007AE08C /* tictactoe */; };
+		28B72A652E2D82A20095665E /* UnigameTest in Frameworks */ = {isa = PBXBuildFile; productRef = 28B72A642E2D82A20095665E /* UnigameTest */; };
 		28DD48C42E0F4CAE007A4059 /* unigame in Frameworks */ = {isa = PBXBuildFile; productRef = 28DD48C32E0F4CAE007A4059 /* unigame */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28B72A652E2D82A20095665E /* UnigameTest in Frameworks */,
 				28DD48C42E0F4CAE007A4059 /* unigame in Frameworks */,
 				288D1DBF2E16FC8A007AE08C /* tictactoe in Frameworks */,
 			);
@@ -74,6 +76,7 @@
 			packageProductDependencies = (
 				28DD48C32E0F4CAE007A4059 /* unigame */,
 				288D1DBE2E16FC8A007AE08C /* tictactoe */,
+				28B72A642E2D82A20095665E /* UnigameTest */,
 			);
 			productName = "unigame-app";
 			productReference = 28DD48AE2E0F4915007A4059 /* unigame-app.app */;
@@ -106,6 +109,7 @@
 			packageReferences = (
 				28DD48C22E0F4CAE007A4059 /* XCRemoteSwiftPackageReference "unigame" */,
 				288D1DBD2E16FC8A007AE08C /* XCRemoteSwiftPackageReference "tictactoe" */,
+				28B72A632E2D82A20095665E /* XCRemoteSwiftPackageReference "UnigameTest" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 28DD48AF2E0F4915007A4059 /* Products */;
@@ -351,6 +355,14 @@
 				kind = branch;
 			};
 		};
+		28B72A632E2D82A20095665E /* XCRemoteSwiftPackageReference "UnigameTest" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/joshuaauerbachwatson/UnigameTest";
+			requirement = {
+				branch = "to-swiftpm";
+				kind = branch;
+			};
+		};
 		28DD48C22E0F4CAE007A4059 /* XCRemoteSwiftPackageReference "unigame" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/joshuaauerbachwatson/unigame.git";
@@ -366,6 +378,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 288D1DBD2E16FC8A007AE08C /* XCRemoteSwiftPackageReference "tictactoe" */;
 			productName = tictactoe;
+		};
+		28B72A642E2D82A20095665E /* UnigameTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28B72A632E2D82A20095665E /* XCRemoteSwiftPackageReference "UnigameTest" */;
+			productName = UnigameTest;
 		};
 		28DD48C32E0F4CAE007A4059 /* unigame */ = {
 			isa = XCSwiftPackageProductDependency;
