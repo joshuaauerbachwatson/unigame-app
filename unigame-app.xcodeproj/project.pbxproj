@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2887C7B82E2EECD60096A9A8 /* AnyCards in Frameworks */ = {isa = PBXBuildFile; productRef = 2887C7B72E2EECD60096A9A8 /* AnyCards */; };
-		288D1DBF2E16FC8A007AE08C /* tictactoe in Frameworks */ = {isa = PBXBuildFile; productRef = 288D1DBE2E16FC8A007AE08C /* tictactoe */; };
-		28B72A652E2D82A20095665E /* UnigameTest in Frameworks */ = {isa = PBXBuildFile; productRef = 28B72A642E2D82A20095665E /* UnigameTest */; };
+		28212B2E2E313ABF00885D5B /* AnyCards in Frameworks */ = {isa = PBXBuildFile; productRef = 28212B2D2E313ABF00885D5B /* AnyCards */; };
+		28212B312E313B9B00885D5B /* tictactoe in Frameworks */ = {isa = PBXBuildFile; productRef = 28212B302E313B9B00885D5B /* tictactoe */; };
+		28212B342E313CB000885D5B /* UnigameTest in Frameworks */ = {isa = PBXBuildFile; productRef = 28212B332E313CB000885D5B /* UnigameTest */; };
 		28DD48C42E0F4CAE007A4059 /* unigame in Frameworks */ = {isa = PBXBuildFile; productRef = 28DD48C32E0F4CAE007A4059 /* unigame */; };
 /* End PBXBuildFile section */
 
@@ -30,10 +30,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28B72A652E2D82A20095665E /* UnigameTest in Frameworks */,
-				2887C7B82E2EECD60096A9A8 /* AnyCards in Frameworks */,
+				28212B312E313B9B00885D5B /* tictactoe in Frameworks */,
+				28212B342E313CB000885D5B /* UnigameTest in Frameworks */,
+				28212B2E2E313ABF00885D5B /* AnyCards in Frameworks */,
 				28DD48C42E0F4CAE007A4059 /* unigame in Frameworks */,
-				288D1DBF2E16FC8A007AE08C /* tictactoe in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,9 +77,9 @@
 			name = "unigame-app";
 			packageProductDependencies = (
 				28DD48C32E0F4CAE007A4059 /* unigame */,
-				288D1DBE2E16FC8A007AE08C /* tictactoe */,
-				28B72A642E2D82A20095665E /* UnigameTest */,
-				2887C7B72E2EECD60096A9A8 /* AnyCards */,
+				28212B2D2E313ABF00885D5B /* AnyCards */,
+				28212B302E313B9B00885D5B /* tictactoe */,
+				28212B332E313CB000885D5B /* UnigameTest */,
 			);
 			productName = "unigame-app";
 			productReference = 28DD48AE2E0F4915007A4059 /* unigame-app.app */;
@@ -111,9 +111,9 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				28DD48C22E0F4CAE007A4059 /* XCRemoteSwiftPackageReference "unigame" */,
-				288D1DBD2E16FC8A007AE08C /* XCRemoteSwiftPackageReference "tictactoe" */,
-				28B72A632E2D82A20095665E /* XCRemoteSwiftPackageReference "UnigameTest" */,
-				2887C7B62E2EECD60096A9A8 /* XCRemoteSwiftPackageReference "anyCards" */,
+				28212B2C2E313ABF00885D5B /* XCRemoteSwiftPackageReference "anyCards" */,
+				28212B2F2E313B9B00885D5B /* XCRemoteSwiftPackageReference "tictactoe" */,
+				28212B322E313CB000885D5B /* XCRemoteSwiftPackageReference "UnigameTest" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 28DD48AF2E0F4915007A4059 /* Products */;
@@ -351,27 +351,27 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2887C7B62E2EECD60096A9A8 /* XCRemoteSwiftPackageReference "anyCards" */ = {
+		28212B2C2E313ABF00885D5B /* XCRemoteSwiftPackageReference "anyCards" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/joshuaauerbachwatson/anyCards.git";
 			requirement = {
-				branch = "to-swiftpm";
+				branch = main;
 				kind = branch;
 			};
 		};
-		288D1DBD2E16FC8A007AE08C /* XCRemoteSwiftPackageReference "tictactoe" */ = {
+		28212B2F2E313B9B00885D5B /* XCRemoteSwiftPackageReference "tictactoe" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/joshuaauerbachwatson/tictactoe";
 			requirement = {
-				branch = "to-swiftpm";
+				branch = main;
 				kind = branch;
 			};
 		};
-		28B72A632E2D82A20095665E /* XCRemoteSwiftPackageReference "UnigameTest" */ = {
+		28212B322E313CB000885D5B /* XCRemoteSwiftPackageReference "UnigameTest" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/joshuaauerbachwatson/UnigameTest";
 			requirement = {
-				branch = "to-swiftpm";
+				branch = main;
 				kind = branch;
 			};
 		};
@@ -386,19 +386,19 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2887C7B72E2EECD60096A9A8 /* AnyCards */ = {
+		28212B2D2E313ABF00885D5B /* AnyCards */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2887C7B62E2EECD60096A9A8 /* XCRemoteSwiftPackageReference "anyCards" */;
+			package = 28212B2C2E313ABF00885D5B /* XCRemoteSwiftPackageReference "anyCards" */;
 			productName = AnyCards;
 		};
-		288D1DBE2E16FC8A007AE08C /* tictactoe */ = {
+		28212B302E313B9B00885D5B /* tictactoe */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 288D1DBD2E16FC8A007AE08C /* XCRemoteSwiftPackageReference "tictactoe" */;
+			package = 28212B2F2E313B9B00885D5B /* XCRemoteSwiftPackageReference "tictactoe" */;
 			productName = tictactoe;
 		};
-		28B72A642E2D82A20095665E /* UnigameTest */ = {
+		28212B332E313CB000885D5B /* UnigameTest */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 28B72A632E2D82A20095665E /* XCRemoteSwiftPackageReference "UnigameTest" */;
+			package = 28212B322E313CB000885D5B /* XCRemoteSwiftPackageReference "UnigameTest" */;
 			productName = UnigameTest;
 		};
 		28DD48C32E0F4CAE007A4059 /* unigame */ = {
