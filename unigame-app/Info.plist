@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_anyoldcardgame._tcp</string>
+		<string>_anyoldcardgame._udp</string>
+		<string>_tictactoe._tcp</string>
+		<string>_tictactoe._udp</string>
+		<string>_testunigame._tcp</string>
+		<string>_testunigame._udp</string>
+	</array>
+</dict>
+</plist>

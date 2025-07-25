@@ -17,9 +17,22 @@
 		28DD48AE2E0F4915007A4059 /* unigame-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "unigame-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		28212B362E32DF2700885D5B /* Exceptions for "unigame-app" folder in "unigame-app" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 28DD48AD2E0F4915007A4059 /* unigame-app */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		28DD48B02E0F4915007A4059 /* unigame-app */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				28212B362E32DF2700885D5B /* Exceptions for "unigame-app" folder in "unigame-app" target */,
+			);
 			path = "unigame-app";
 			sourceTree = "<group>";
 		};
@@ -278,6 +291,8 @@
 				DEVELOPMENT_TEAM = 5A8RHYSHFN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "unigame-app/Info.plist";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Contact others nearby for game playing";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -308,6 +323,8 @@
 				DEVELOPMENT_TEAM = 5A8RHYSHFN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "unigame-app/Info.plist";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Contact others nearby for game playing";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
