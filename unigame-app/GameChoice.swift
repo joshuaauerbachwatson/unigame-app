@@ -42,18 +42,6 @@ let GameTable = games + [Game.Test]
 let GameTable = games
 #endif
 
-// Model variables (lazy stored variables, initialized at most once, on demand)
-var tictactoeModel: UnigameModel<TicTacToeHandle> = {
-     TicTacToeHandle.makeModel()
-}()
-var testModel: UnigameModel<TestGameHandle> = {
-     TestGameHandle.makeModel()
-}()
-var anyCardsModel: UnigameModel<AnyCardsGameHandle> = {
-     AnyCardsGameHandle.makeModel()
-}()
-// Add here as well
-
 //
 // Make the appropriate GameView and model for a choice
 //
@@ -61,11 +49,11 @@ var anyCardsModel: UnigameModel<AnyCardsGameHandle> = {
 func gameView(_ game: Game) -> some View {
     switch game {
     case .TicTacToe:
-        ContentView<TicTacToeHandle>().environment(tictactoeModel)
+        ContentView<TicTacToeHandle>().environment(TicTacToeHandle.model)
     case .Test:
-        ContentView<TestGameHandle>().environment(testModel)
+        ContentView<TestGameHandle>().environment(TestGameHandle.model)
     case .AnyCards:
-        ContentView<AnyCardsGameHandle>().environment(anyCardsModel)
+        ContentView<AnyCardsGameHandle>().environment(AnyCardsGameHandle.model)
     // Add clauses as needed
     }
 }
