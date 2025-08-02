@@ -55,14 +55,20 @@ let GameTable = games
 // Make the appropriate GameView and model for a choice
 //
 @ViewBuilder
-func gameView(_ game: Game) -> some View {
+func gameView(_ game: Game, _ terminator: @escaping ()->Void) -> some View {
     switch game {
     case .TicTacToe:
-        ContentView<TicTacToeHandle>().environment(TicTacToeHandle.model)
+        ContentView<TicTacToeHandle>()
+            .environment(TicTacToeHandle.model)
+            .environment(\.endGame, terminator)
     case .Test:
-        ContentView<TestGameHandle>().environment(TestGameHandle.model)
+        ContentView<TestGameHandle>()
+            .environment(TestGameHandle.model)
+            .environment(\.endGame, terminator)
     case .AnyCards:
-        ContentView<AnyCardsGameHandle>().environment(AnyCardsGameHandle.model)
+        ContentView<AnyCardsGameHandle>()
+            .environment(AnyCardsGameHandle.model)
+            .environment(\.endGame, terminator)
     // Add clauses as needed
     }
 }

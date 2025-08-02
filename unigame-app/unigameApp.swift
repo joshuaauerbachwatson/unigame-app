@@ -22,8 +22,9 @@ struct unigameApp: App {
     var body: some Scene {
         WindowGroup {
             Group {
+                let terminator: ()->Void = { chosenGame = nil }
                 if let chosenGame {
-                    gameView(chosenGame)
+                    gameView(chosenGame, terminator)
                 } else {
                     ChoosingView(app: self)
                 }
